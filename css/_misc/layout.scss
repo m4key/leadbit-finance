@@ -84,12 +84,14 @@ p{
     max-width: rem(450px);
   }
   @include phones-small{
-    max-width: rem(300px);
+    max-width: rem(425px);
   }
 }
 
 .content{
   max-width: rem(1140px);
+  width: 95%; 
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column; 
@@ -104,7 +106,8 @@ p{
     max-width: rem(450px);
   }
   @include phones-small{
-    max-width: rem(300px);
+    max-width: rem(425px);
+    width: 100%; 
   }
 
 }
@@ -117,14 +120,10 @@ p{
   color:#fff;
   background-image: linear-gradient(to top, #0091b1, #00c1d3 58%, #00c1d3);
   border: none;
-  box-shadow:0 0 10px #00def9;
+  box-shadow:0 0 10px #00def9, 0px 81px 97px -6px rgba(50, 50, 50, 0.75);;
   padding: rem(18px) rem(75px);
   cursor: pointer;
-  &::before{
-    width: 170px;
-    height: 31px;
-    box-shadow: 0 5px 5px -5px #000;
-  }
+
   &:hover{
     background: #ca0205;
   }

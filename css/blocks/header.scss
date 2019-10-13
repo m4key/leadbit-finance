@@ -11,6 +11,9 @@
     justify-content: space-between;
     margin-top: rem(67px);
   }
+  @include phones-small{
+    margin-top: rem(35px);
+  }
 }
 .header__buttons{
   display: flex;
@@ -22,9 +25,9 @@
     margin-left: rem(364px);
   }
   @include phones{
-    margin-left: rem(198px);
+    margin-left: rem(54px);
   }
   @include phones-small{
-    margin-left: rem(70px);
+    margin-left: rem(22px);
   }
 }

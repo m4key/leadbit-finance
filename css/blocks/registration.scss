@@ -131,6 +131,7 @@
 .registration__button{
   margin: 0 auto;
   margin-top: rem(65px);
+  padding: rem(18px) rem(25px);
   @include laptops{
     margin-top: rem(110px);
   }
