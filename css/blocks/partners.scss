@@ -1,5 +1,5 @@
 .partners{
-  height: rem(837px);
+  min-height: rem(837px);
   background: url("../images/design_el-2.png") top center ;
   background-repeat: no-repeat;
   background-position-y: rem(80px);
@@ -8,8 +8,20 @@
   }
   @include tablets{
     background-position-y: 1rem;
-    height: rem(486px);
+    min-height: rem(486px);
     background-size: contain;
+  }
+  @include phones{
+    background: url("../images/design_el-mobile.png") top center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: rem(5px);
+    min-height: rem(402px);
+  }
+}
+.partners__content{
+  @include phones{
+    min-height: rem(402px);
   }
 }
 .partners__title{
@@ -17,7 +29,7 @@
   @include myriad(bold);
   color: #045c8d;
   text-transform: uppercase;
-  margin-top: rem(144px);
+  margin-top: rem(130px);
   @include laptops{
     font-size: rem(50px);
   }
@@ -49,6 +61,7 @@
 }
 .partners__content-item{
   width: 33%;
+  margin-top: rem(86px);
   @include tablets{
     width: rem(289px);
     height: rem(195px);

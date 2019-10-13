@@ -7,6 +7,10 @@
   @include laptops{
     width: rem(284px);
   }
+  @include phones{
+    width: rem(192px);
+    height: rem(21px);
+  }
 }
 .logo__img{
   width: 100%;

@@ -1,13 +1,15 @@
 .slider{
   position: relative;
   display: none;
+  margin-top: rem(166px);
   @include tablets{
     display: block;
   }
+  @include phones{
+    margin-top: 0;
+  }
 }
-.slider__content{
-  margin-top: rem(166px);
-}
+
 .slider__content-list{
   width: 100%;
   position: relative;
@@ -54,12 +56,12 @@
     z-index: 20;
     &-prev{
       left: 0;
-      top: 70%;
+      top: 50%;
       transform: rotate(45deg);
     }
     &-next{
       right: 0;
-      top: 70%;
+      top: 50%;
       transform: rotate(225deg);
     }
   }

@@ -61,7 +61,9 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-}
+
+}    
+
 .slick-track:before,
 .slick-track:after
 {

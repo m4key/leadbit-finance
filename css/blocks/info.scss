@@ -9,7 +9,7 @@
     margin-top: rem(68px);
   }
   @include phones{
-    margin-top: rem(111px);
+    margin-top: rem(60px);
   }
 }
 .info__title {
@@ -38,6 +38,9 @@
     text-align: left;
     margin-top: rem(10px);
   }
+  @include phones{
+    margin-top: rem(20px);
+  }
 }
 .info__button{
   margin-top: rem(96px);
@@ -46,5 +49,8 @@
   }
   @include tablets{
     margin-top: rem(48px);
+  }
+  @include phones{
+    margin-top: rem(80px);
   }
 }

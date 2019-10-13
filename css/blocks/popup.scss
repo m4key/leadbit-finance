@@ -25,7 +25,14 @@
   width: rem(20px);
   height: rem(20px);
   position: absolute;
-  right: 10%;
+  right: 9%;
+  @include tablets{
+    top: 8%;
+  }
+  @include phones{
+    top: 7%;
+  }
+
 }
 .popup__close-btn{
   display: flex;
@@ -87,19 +94,19 @@
 }
 
 .popup__social-item{
-  margin-left: rem(20px);
   display: flex;
   flex-shrink: 0;
-
+  margin-left: 10px;
   &:first-child{
     margin-left: 0;
   }
 }
 .popup__social-link{
-  width: rem(20px);
-  height: rem(20px);
+  width: rem(30px);
+  height: rem(30px);
   &--vk{
-    width: rem(26px);
+    width: rem(36px);
+    height: rem(35px);
   }
 }
 .popup__social-img{

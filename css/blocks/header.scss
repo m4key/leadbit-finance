@@ -9,11 +9,6 @@
   }
   @include tablets{
     justify-content: space-between;
-  }
-  @include phones{
-    margin-top: rem(24px);
-  }
-  @include phones-small{
-    margin-right: rem(16px);
+    margin-top: rem(67px);
   }
 }
