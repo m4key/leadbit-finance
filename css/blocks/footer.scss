@@ -6,7 +6,9 @@
     min-height: rem(716px);
   }
 }
-
+.footer__content{
+  margin: 0 auto;
+}
 .footer__communication{
   margin-top: rem(119px);
   @include tablets{

@@ -19,7 +19,7 @@
 
 
 @mixin phones-small{
-  @media screen and (min-width:$phones-small)and (max-width:$phones-large){
+  @media screen and (max-width:$phones-small){
     @content;
   }
 }
