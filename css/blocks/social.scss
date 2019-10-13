@@ -1,0 +1,33 @@
+.header__social{
+  margin-left: 5%;
+  @include tablets{ 
+    display: none;
+  }
+}
+
+.header__social-list{
+  display: flex;
+  align-items: baseline;
+}
+
+.header__social-item{
+  margin-left: rem(20px);
+  display: flex;
+  flex-shrink: 0;
+
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.header__social-link{
+  width: rem(20px);
+  height: rem(20px);
+  &--vk{
+    width: rem(26px);
+  }
+}
+.header__social-img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

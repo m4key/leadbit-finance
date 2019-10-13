@@ -1,0 +1,64 @@
+.about{
+  height: rem(1058px);  
+  background-color: #fff;
+  background: url("../images/design_el.png") top center;
+  background-repeat: no-repeat;
+  background-position-y: rem(21px);
+}
+
+.about__container{
+  align-items: center;
+  height: rem(1058px);
+  display: flex;
+  
+  @include tablets{
+    height: rem(1083px);
+  }
+  @include phones-small{
+    height: rem(1163px);
+  }
+}
+
+.about__content{
+  @include phones-small{
+    background: none;
+  }
+}
+.about__desc{
+  display: flex;
+  margin-top: rem(176px);
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.about__title{
+  font-size: rem(60px);
+  @include myriad(bold);
+  text-transform: uppercase;
+  color: #045c8d;
+  text-align: center;
+  line-height: 1;
+  @include phones{
+    margin-top: rem(143px);
+    font-size: rem(50px);
+  }
+  @include phones-small{
+    margin-top: rem(47px);
+  }
+}
+.about__text{
+  font-size: rem(24px);
+  margin-left: rem(113px);
+  @include myriad(normal);
+  color: #010101;
+  width: rem(682px);
+  @include tablets{
+    font-size: rem(20px);
+  }
+  @include phones{
+    font-size: rem(18px);
+    width: rem(458px);
+  }
+  @include phones-small{
+    width: rem(346px);
+  }
+}

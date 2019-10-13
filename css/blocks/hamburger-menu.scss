@@ -1,0 +1,39 @@
+.hamburger__button{
+  display: none;
+  align-items: center;
+  width: rem(24px);
+  height: rem(24px);
+  position: relative;
+  background: transparent;
+  border: transparent;
+  padding: 0;
+  @include tablets{
+    display: flex;
+  }
+}
+.hamburger__button-element {
+  width: rem(24px);
+  height: rem(4px);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &::before{
+    position: absolute;
+    content: "";
+    width: rem(24px);
+    height: rem(4px);
+    background-color: #fff;
+    top: rem(-8px);
+    left: 0;
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: rem(24px);
+    height: rem(4px);
+    background-color: #fff;
+    bottom: rem(-8px);
+    left: 0;
+  }
+}

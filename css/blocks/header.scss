@@ -1,0 +1,19 @@
+.header{
+  margin-top: rem(56px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  @include laptops{
+    margin-top: rem(40px);
+  }
+  @include tablets{
+    justify-content: space-between;
+  }
+  @include phones{
+    margin-top: rem(24px);
+  }
+  @include phones-small{
+    margin-right: rem(16px);
+  }
+}

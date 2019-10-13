@@ -1,0 +1,23 @@
+.partners{
+  height: rem(837px);
+  background: url("../images/design_el-2.png") top center ;
+  background-repeat: no-repeat;
+  background-position-y: rem(80px);
+  @include tablets{
+    height: rem(486px);
+  }
+}
+.partners__title{
+  font-size: rem(60px);
+  @include myriad(bold);
+  color: #045c8d;
+  text-transform: uppercase;
+  margin-top: rem(144px);
+  @include tablets{    
+    margin-top: rem(119px);
+  }
+  @include phones-small{
+    margin-top: rem(55px);
+  }
+
+}
