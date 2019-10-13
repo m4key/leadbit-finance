@@ -30,7 +30,7 @@ html {
   @media screen and (max-width: 480px) {
     html {
       font-size: 14px; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     html {
       font-size: 12px; } }
 
@@ -96,14 +96,13 @@ p {
   @media screen and (max-width: 480px) {
     .container {
       max-width: 28.125rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .container {
       max-width: 18.75rem; } }
 
 .content {
   max-width: 71.25rem;
   height: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +120,7 @@ p {
   @media screen and (max-width: 480px) {
     .content {
       max-width: 28.125rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .content {
       max-width: 18.75rem; } }
 
@@ -186,10 +185,18 @@ p {
       min-height: 31.6875rem;
       background: url("../images/bg_video.jpg") center center/cover no-repeat; } }
 
-.primary__container {
+.primary__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 4; }
+  z-index: 4;
+  background-color: rgba(36, 64, 77, 0.6); }
+
+.primary__container {
+  width: 100%;
+  height: 100%; }
 
 @media screen and (max-width: 1024px) {
   .primary__content {
@@ -218,6 +225,24 @@ p {
       -ms-flex-pack: justify;
       justify-content: space-between;
       margin-top: 4.1875rem; } }
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5%; }
+  @media screen and (max-width: 1024px) {
+    .header__buttons {
+      margin-left: 1%; } }
+  @media screen and (max-width: 768px) {
+    .header__buttons {
+      margin-left: 22.75rem; } }
+  @media screen and (max-width: 480px) {
+    .header__buttons {
+      margin-left: 12.375rem; } }
+  @media screen and (max-width: 320px) {
+    .header__buttons {
+      margin-left: 4.375rem; } }
 
 .logo {
   display: -webkit-box;
@@ -262,7 +287,7 @@ p {
   @media screen and (max-width: 480px) {
     .menu {
       left: 0; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .menu {
       left: -2%; } }
 
@@ -356,7 +381,6 @@ p {
     fill: #00def9; }
 
 .language {
-  margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,18 +393,6 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 1024px) {
-    .language {
-      margin-left: 1%; } }
-  @media screen and (max-width: 768px) {
-    .language {
-      margin-left: 22.75rem; } }
-  @media screen and (max-width: 480px) {
-    .language {
-      margin-left: 12.375rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    .language {
-      margin-left: 4.375rem; } }
 
 .language__pic {
   width: 32px;
@@ -726,11 +738,11 @@ p {
   @media screen and (max-width: 768px) {
     .about__container {
       height: 67.6875rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .about__container {
       height: 72.6875rem; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (max-width: 320px) {
   .about__content {
     background: none; } }
 
@@ -757,7 +769,7 @@ p {
     .about__desc {
       font-size: 2.5rem;
       margin-top: 3.5rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .about__desc {
       margin-top: 4.5rem; } }
 
@@ -800,7 +812,7 @@ p {
   @media screen and (max-width: 480px) {
     .about__text {
       width: 25.875rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .about__text {
       width: 21.625rem; } }
 
@@ -822,7 +834,7 @@ p {
   @media screen and (max-width: 480px) {
     .quality__list {
       margin-top: 3.0625rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .quality__list {
       margin-top: 0; } }
 
@@ -849,7 +861,7 @@ p {
   @media screen and (max-width: 480px) {
     .quality__item {
       padding-top: 1.875rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .quality__item {
       width: 10.75rem; } }
 
@@ -912,7 +924,7 @@ p {
   @media screen and (max-width: 480px) {
     .statistic__container {
       min-height: 63.5rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .statistic__container {
       min-height: 58rem; } }
 
@@ -1068,7 +1080,7 @@ p {
   @media screen and (max-width: 768px) {
     .partners {
       background-position-y: 1rem;
-      min-height: 30.375rem;
+      min-height: 27.375rem;
       background-size: contain; } }
   @media screen and (max-width: 480px) {
     .partners {
@@ -1097,7 +1109,7 @@ p {
       margin-top: 6.0625rem;
       font-size: 2.5rem;
       text-align: center; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .partners__title {
       margin-top: 3.4375rem; } }
 
@@ -1157,7 +1169,7 @@ p {
 .slider {
   position: relative;
   display: none;
-  margin-top: 10.375rem; }
+  margin-top: 2rem; }
   @media screen and (max-width: 768px) {
     .slider {
       display: block; } }
@@ -1249,7 +1261,7 @@ p {
   @media screen and (max-width: 480px) {
     .registration {
       min-height: 48rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .registration {
       min-height: 67rem; } }
 
@@ -1284,7 +1296,7 @@ p {
   @media screen and (max-width: 480px) {
     .registration__desc {
       margin-top: 3.4375rem; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .registration__desc {
       margin-top: 2.375rem; } }
 
@@ -1356,7 +1368,7 @@ p {
       width: 100%;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (max-width: 320px) {
     .registration__list {
       margin-top: 1.75rem;
       -webkit-box-orient: vertical;
@@ -1417,6 +1429,9 @@ p {
   @media screen and (max-width: 768px) {
     .footer {
       min-height: 44.75rem; } }
+
+.footer__content {
+  margin: 0 auto; }
 
 .footer__communication {
   margin-top: 7.4375rem; }

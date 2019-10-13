@@ -1,5 +1,4 @@
 .language{
-  margin-left: 5%;
   display: flex;
   flex-shrink: 0;
   background: none;
@@ -7,18 +6,7 @@
   padding: 0;
   cursor: pointer;
   align-items: center;
-  @include laptops{
-    margin-left: 1%;
-  }
-  @include tablets{
-    margin-left: rem(364px);
-  }
-  @include phones{
-    margin-left: rem(198px);
-  }
-  @include phones-small{
-    margin-left: rem(70px);
-  }
+
 }
 .language__pic{
   width: 32px;

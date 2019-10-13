@@ -12,3 +12,19 @@
     margin-top: rem(67px);
   }
 }
+.header__buttons{
+  display: flex;
+  margin-left: 5%;
+  @include laptops{
+    margin-left: 1%;
+  }
+  @include tablets{
+    margin-left: rem(364px);
+  }
+  @include phones{
+    margin-left: rem(198px);
+  }
+  @include phones-small{
+    margin-left: rem(70px);
+  }
+}
