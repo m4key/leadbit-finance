@@ -4,6 +4,9 @@
   width: rem(349px);
   height: rem(39px);
   flex-shrink: 0;
+  @include laptops{
+    width: rem(284px);
+  }
 }
 .logo__img{
   width: 100%;

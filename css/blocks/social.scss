@@ -1,6 +1,9 @@
 .header__social{
   margin-left: 5%;
-  @include tablets{ 
+  @include laptops{
+    margin-left: 1%;
+  }
+  @include tablets{
     display: none;
   }
 }
@@ -17,6 +20,9 @@
 
   &:first-child{
     margin-left: 0;
+  }
+  @include laptops{
+    margin-left: rem(12px);
   }
 }
 .header__social-link{

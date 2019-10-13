@@ -7,8 +7,11 @@
   padding: 0;
   cursor: pointer;
   align-items: center;
+  @include laptops{
+    margin-left: 1%;
+  }
   @include tablets{
-    margin-left: rem(204px);
+    margin-left: rem(364px);
   }
 }
 .language__pic{

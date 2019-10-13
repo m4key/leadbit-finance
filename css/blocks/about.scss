@@ -4,6 +4,13 @@
   background: url("../images/design_el.png") top center;
   background-repeat: no-repeat;
   background-position-y: rem(21px);
+  @include tablets{
+    background-size: contain;
+  }
+  @include phones{
+    background: url("../images/design_el-mobile.png") top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .about__container{
@@ -29,6 +36,11 @@
   margin-top: rem(176px);
   justify-content: space-between;
   white-space: nowrap;
+  @include tablets{
+    flex-direction: column;
+    margin-top: rem(144px);
+    align-items: center;
+  }
 }
 .about__title{
   font-size: rem(60px);
@@ -37,6 +49,12 @@
   color: #045c8d;
   text-align: center;
   line-height: 1;
+  @include laptops{
+    font-size: rem(50px);
+  }
+  @include tablets{
+    font-size: rem(44px);
+  }
   @include phones{
     margin-top: rem(143px);
     font-size: rem(50px);
@@ -51,8 +69,17 @@
   @include myriad(normal);
   color: #010101;
   width: rem(682px);
+  white-space: normal;
+  @include laptops{
+    font-size: rem(22px);
+    margin-left: rem(32px);
+  }
   @include tablets{
     font-size: rem(20px);
+    margin-top: rem(28px);
+    margin-left: 0;
+    text-align: center;
+    width: rem(526px);
   }
   @include phones{
     font-size: rem(18px);

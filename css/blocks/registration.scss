@@ -1,6 +1,9 @@
 .registration{
   background-color: #e7e9ea;
   height: rem(720px);
+  @include tablets{
+    height: rem(760px);
+  }
   @include phones-small{
     height: rem(1072px);
   }
@@ -16,6 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include tablets{
+    flex-direction: column;
+  }
 }
 .registration__img{
   width: 88px;
@@ -28,6 +34,9 @@
     top: rem(100px);
     left: -25%;
     border-bottom: 4px solid #00bfd2;
+    @include tablets{
+      border: transparent;
+    }
   }
   position: relative;
 }
@@ -40,12 +49,18 @@
   font-size: rem(50px);
   margin-top: rem(110px);
   text-align: left;
-  @include phones{
+  @include laptops{
+    margin-top: rem(62px);
     font-size: rem(40px);
+  }
+  @include tablets{
+    text-align: center;
+  }
+  @include phones{
     margin-top: rem(55px);
   }
   @include phones-small{
-    margin-top: rem(39px);
+    margin-top: rem(38px);
   }
 }
 .registration__subtitle{
@@ -53,8 +68,16 @@
   margin-top: rem(40px);
   color: #010101;
   @include myriad(normal);
+  margin-left: rem(49px);
+  @include laptops{
+    font-size: rem(22px);
+  }
+  @include tablets{
+    margin-left: 0;
+    margin-top: rem(28px);
+  }
   @include phones{
-    font-size: 20px;
+    font-size: rem(20px);
   }
 }
 .registration__list{
@@ -62,6 +85,14 @@
   align-items: center;
   justify-content: space-around;
   margin-top: rem(90px);
+  @include laptops{
+    margin-top: rem(115px);
+  }
+  @include tablets{
+    margin-top: rem(55px);
+    width: 100%;
+    flex-wrap: wrap;
+  }
   @include phones-small{
     margin-top: rem(28px);
     flex-direction: column;
@@ -72,14 +103,20 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  @include tablets{
+    width: 50%;
+  }
 }
 .registration__text{
   font-size: rem(20px);
-  margin-top: 60px;
+  margin-top: rem(60px);
   @include myriad(bold);
   text-transform: uppercase;
   color: #142831;
   letter-spacing: 2px;
+  @include tablets{
+    margin-top: rem(30px);
+  }
   @include phones{
     font-size: rem(16px);
   }
@@ -87,4 +124,10 @@
 .registration__button{
   margin: 0 auto;
   margin-top: rem(65px);
+  @include laptops{
+    margin-top: rem(110px);
+  }
+  @include tablets{
+    margin-top: rem(46px);
+  }
 }
