@@ -1,0 +1,111 @@
+.statistic{
+  background: url("../images/bg_screen_three.png") center center / cover no-repeat;
+  min-height: rem(1091px);
+}
+.statistic__container{
+  height: rem(1091px);
+  @include phones{
+    height: rem(870px);
+  }
+  @include phones-small{
+    height: rem(928px);
+  }
+}
+.statistic__chips{
+  position: absolute;
+  z-index: 15;
+  @include laptops{
+    display: none;
+  }
+}
+
+.statistic__list{
+  margin: 0 auto;
+  margin-top: rem(138px);
+  @include tablets{
+    margin-top: rem(346px);
+  }
+  @include phones{
+    margin-top: rem(298px);
+    flex-direction: column;
+  }
+  @include phones-small{
+    margin-top: rem(358px);
+  }
+}
+.statistic__item{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center; 
+  align-items: flex-end;
+  margin-top: rem(55px);
+  &:first-child{
+    margin-top: 0;
+  }
+  &--border{
+    border: solid 4px #00bfd2;
+    padding: rem(87px) rem(87px) rem(97px) rem(42px);
+  }
+  @include laptops{
+    width: rem(312px);
+  }
+  @include tablets{
+    height: rem(364px);
+    width: rem(248px);
+  }
+  @include phones{
+    height: rem(188px);
+    width: rem(280px);
+  }
+}
+.statistic__value{
+  white-space: nowrap;
+  font-size: rem(140px);
+  line-height: 0.8;
+  @include myriad(bold);
+  color: #00def9;
+  @include tablets{
+    padding-top: rem(49px);
+    font-size: rem(52px);
+  }
+  @include phones{
+    padding-top: rem(17px);
+    font-size: rem(40px);
+  }
+  &--active{
+    margin-left: rem(128px);
+    @include tablets{
+      padding-top: 0;
+    }
+  }
+}
+.statistic__text{
+  @include myriad(600);
+  font-size: rem(30px);
+  color:#fff;
+  text-transform: uppercase;
+  text-align: left;
+  &--active{
+    text-align: right;
+  }
+  @include tablets{
+    font-size: rem(18px);
+  }
+  @include phones{
+    font-size: rem(14px); 
+    padding-top: 0;
+  }
+}
+.statistic__btn{
+  display: flex;
+  justify-content: center;
+}
+.statistic__button{
+  margin-top: rem(130px);
+  @include tablets{
+    margin-top: rem(66px);
+  }
+  @include phones{
+    margin-top: rem(2px);
+  }
+}

@@ -1,0 +1,30 @@
+.info{
+  margin-top: rem(190px);
+  color:#fff;
+  text-align: center;
+  @include laptops{
+    margin-top: rem(100px);
+  }
+  @include phones{
+    margin-top: rem(111px);
+  }
+}
+.info__title {
+  text-transform: uppercase;
+  font-size: rem(60px);
+  @include myriad(bold);
+}
+.info__subtitle{
+  @include myriad(medium);
+  font-size: rem(50px);
+  margin-top: rem(46px);
+  @include laptops{
+    margin-top: 0;
+  }
+}
+.info__button{
+  margin-top: rem(96px);
+  @include laptops{
+    margin-top: rem(32px);
+  }
+}

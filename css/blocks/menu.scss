@@ -1,0 +1,31 @@
+.menu{
+  margin-left: 12%;
+  display: flex;
+  align-items: center;
+  @include laptops{
+    margin-left: rem(25px);
+  }
+  @include tablets{
+    display: none;
+  }
+}
+.menu__list{
+  display: flex;
+}
+.menu__item{
+  &:first-child{
+    margin-left: 0;
+  }
+  white-space: nowrap;
+  padding-left: rem(28px);
+}
+.menu__link{
+  text-decoration: none;
+  color:#fff;
+  padding: 8px 15px;
+  @include myriad(medium);
+  border: 2px solid transparent;
+  &:hover{
+    border: solid 2px #00def9;
+  }
+}

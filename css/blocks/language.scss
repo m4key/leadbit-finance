@@ -1,0 +1,22 @@
+.language{
+  margin-left: 5%;
+  display: flex;
+  flex-shrink: 0;
+  background: none;
+  border: transparent;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+  @include tablets{
+    margin-left: rem(204px);
+  }
+}
+.language__pic{
+  width: 32px;
+  height: 21px;
+}
+.language__pic-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

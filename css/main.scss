@@ -1,0 +1,42 @@
+//breakpoints
+$laptops: 1024px;
+$tablets: 768px;
+$phones: 480px;
+$phones-small: 320px;
+
+//media
+@import "_misc/media.scss";
+
+//setups
+
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/layout";
+
+//blocks
+//section primary
+@import "blocks/primary.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/social.scss";
+@import "blocks/language.scss";
+@import "blocks/arrow.scss";
+@import "blocks/info.scss";
+@import "blocks/hamburger-menu.scss";
+@import "blocks/popup.scss";
+
+//section about
+@import "blocks/about.scss";
+@import "blocks/quality.scss";
+//section statistic
+@import "blocks/statistic.scss";
+//section partners
+
+@import "blocks/partners.scss";
+@import "blocks/slider.scss";
+//section registration
+
+@import "blocks/registration.scss";
+//footer
+@import "blocks/footer.scss";
