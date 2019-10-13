@@ -142,7 +142,10 @@ p {
   -webkit-box-shadow: 0 0 10px #00def9, 0px 81px 97px -6px rgba(50, 50, 50, 0.75);
   box-shadow: 0 0 10px #00def9, 0px 81px 97px -6px rgba(50, 50, 50, 0.75);
   padding: 1.125rem 4.6875rem;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s; }
   .button:hover {
     background: #ca0205; }
   @media screen and (max-width: 768px) {
@@ -258,10 +261,10 @@ p {
 .logo__img {
   width: 21.8125rem;
   height: 2.4375rem;
-  background: url("/images/logo.png"); }
+  background: url("../images/logo.png"); }
   @media screen and (max-width: 1024px) {
     .logo__img {
-      background: url("/images/logo_mobile.png");
+      background: url("../images/logo_mobile.png");
       width: 12rem;
       height: 1.3125rem; } }
   @media screen and (max-width: 768px) {
@@ -320,7 +323,10 @@ p {
   padding: 8px 15px;
   font-family: 'myriad-pro', Helvetica, sans-serif;
   font-weight: normal;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s; }
   .menu__link:hover {
     border: 2px solid #00def9; }
   @media screen and (max-width: 480px) {
@@ -393,7 +399,10 @@ p {
 .social__img {
   width: 100%;
   height: 100%;
-  fill: #fff; }
+  fill: #fff;
+  -webkit-transition: fill .3s;
+  -o-transition: fill .3s;
+  transition: fill .3s; }
   .social__img:hover {
     fill: #00def9; }
 
