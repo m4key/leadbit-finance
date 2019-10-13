@@ -6,9 +6,9 @@
 .logo__img{
   width: rem(349px);
   height: rem(39px);
-  background: url('/images/logo.png');
+  background: url('../images/logo.png');
   @include laptops{
-    background: url('/images/logo_mobile.png');
+    background: url('../images/logo_mobile.png');
     width: rem(192px);
     height: rem(21px);
   }

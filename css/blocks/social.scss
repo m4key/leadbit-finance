@@ -36,9 +36,6 @@
   object-fit: cover;
 }
 
-.social__list{
-
-}
 .social__item{
   width: rem(20px);
   height: rem(20px);
@@ -56,14 +53,12 @@
     }
   }
 }
-.social__link{
-
-}
 
 .social__img{
   width: 100%;
   height: 100%;
   fill:#fff;
+  transition: fill .3s;
   &:hover{
     fill:#00def9;
   }
