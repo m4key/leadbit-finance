@@ -1,11 +1,14 @@
 .registration{
   background-color: #e7e9ea;
-  height: rem(720px);
+  min-height: rem(720px);
   @include tablets{
-    height: rem(760px);
+    min-height: rem(760px);
+  }
+  @include phones{
+    min-height: rem(768px);
   }
   @include phones-small{
-    height: rem(1072px);
+    min-height: rem(1072px);
   }
 }
 
@@ -19,8 +22,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: rem(110px);
+  @include laptops{
+    margin-top: rem(62px);
+    font-size: rem(40px);
+  }
   @include tablets{
     flex-direction: column;
+    text-align: center;
+  }
+  @include phones{
+    margin-top: rem(55px);
+  }
+  @include phones-small{
+    margin-top: rem(38px);
   }
 }
 .registration__img{
@@ -47,20 +62,12 @@
 }
 .registration__title{
   font-size: rem(50px);
-  margin-top: rem(110px);
   text-align: left;
   @include laptops{
-    margin-top: rem(62px);
     font-size: rem(40px);
   }
-  @include tablets{
-    text-align: center;
-  }
   @include phones{
-    margin-top: rem(55px);
-  }
-  @include phones-small{
-    margin-top: rem(38px);
+    text-align: center;
   }
 }
 .registration__subtitle{
@@ -74,7 +81,7 @@
   }
   @include tablets{
     margin-left: 0;
-    margin-top: rem(28px);
+    margin-top: rem(29px);
   }
   @include phones{
     font-size: rem(20px);
@@ -129,5 +136,8 @@
   }
   @include tablets{
     margin-top: rem(46px);
+  }
+  @include phones{
+    margin-top: rem(51px);
   }
 }

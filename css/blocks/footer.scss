@@ -12,6 +12,9 @@
   @include tablets{
     margin-top: rem(65px);
   }
+  @include phones{
+    margin-top: rem(75px);
+  }
 }
 .footer__communication-list{
   display: flex;
@@ -56,8 +59,9 @@
 .footer__communication-text{
   padding-top: rem(20px);
   font-size: rem(18px);
-  @include myriad(600);
+  @include myriad(normal);
   color: #01b7ce;
+  font-weight: 600;
   &--mail{
     padding-top: rem(24px);
   }
@@ -68,6 +72,7 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
+  font-weight: 600;
   @include tablets{
     flex-direction: column;
     margin-top: rem(72px);
@@ -85,10 +90,11 @@
 .footer__logo-text{
   margin-top: rem(31px);
   font-size: rem(14px);
-  @include myriad(600);
+  @include myriad(normal);
   line-height: 2.14;
   color: #456073;
   text-align: left;
+  font-weight: 600;
   @include tablets{
     margin-top: rem(25px);
   }
@@ -100,7 +106,8 @@
 }
 .footer__adress-title{
   font-size: rem(20px);
-  @include myriad(600);
+  @include myriad(normal);
+  font-weight: 600;
   color:#fff;
   line-height: 2.1;
   letter-spacing: 2px;
@@ -108,12 +115,13 @@
 .footer__adress-text{
   margin-top: rem(31px);
   font-size: rem(14px);
-  @include myriad(600);
+  @include myriad(normal);
+  font-weight: 600;
   line-height: 2.14;
   color: #456073;
   text-align: left;
   @include tablets{
-    margin-top: rem(30px);
+    margin-top: rem(20px);
   }
 }
 .footer__social{
@@ -124,13 +132,12 @@
     justify-content: center;
     margin-top: rem(60px);
   }
+  @include phones{
+    justify-content: flex-start;
+  }
 }
 .footer__social-list{
   display: flex;
-  align-items: flex-end;
-  @include tablets{
-    width: 50%;
-  }
 }
 .footer__social-item{
   &:first-child{
@@ -138,6 +145,9 @@
   }
   margin-left: rem(17px);
   @include tablets{
-    width: 50%;
+    margin-left: rem(50px);
   }
+}
+.footer__social-img{
+  fill:#406178;
 }
