@@ -19,11 +19,24 @@
   position: relative;
   height: 100%;
   width: 100%;
+  @include laptops{
+    min-height: rem(568px);
+  }    
+  @include tablets{
+    min-height: rem(462px);
+  }
 }
 
 .primary__container{
- 
   width: 100%;
   height: 100%;
   z-index: 4;
+}
+.primary__content{
+  @include laptops{
+    min-height: rem(568px);
+  }
+  @include tablets{
+    min-height: rem(462px);
+  }
 }

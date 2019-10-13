@@ -1,19 +1,36 @@
 .footer{
-  height: rem(578px);
+  min-height: rem(578px);
   width: 100%;  
   background-image: linear-gradient(to top, #142831, #14313e 98%);
+  @include tablets{
+    min-height: rem(716px);
+  }
 }
 
-.footer__contacts{
+.footer__communication{
   margin-top: rem(119px);
-  @include phones{
-    margin-top: rem(55px);
+  @include tablets{
+    margin-top: rem(65px);
   }
 }
 .footer__communication-list{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @include tablets{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.footer__communication-item{
+  @include tablets{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    &:last-child{
+      padding-top: 89px;
+    }
+  }
 }
 .footer__communication-link{
   width: rem(41px);
@@ -51,10 +68,9 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
-  @include phones{
-    text-align: center;
-    align-items: center;
+  @include tablets{
     flex-direction: column;
+    margin-top: rem(72px);
   }
 }
 .footer__logo{
@@ -73,14 +89,13 @@
   line-height: 2.14;
   color: #456073;
   text-align: left;
-  @include phones{
-    margin-top: 0;
-    text-align: center;
+  @include tablets{
+    margin-top: rem(25px);
   }
 }
 .footer__adress{
-  @include phones{
-    margin-top: rem(70px);
+  @include tablets{
+    margin-top: rem(104px);
   }
 }
 .footer__adress-title{
@@ -97,26 +112,32 @@
   line-height: 2.14;
   color: #456073;
   text-align: left;
-  @include phones{
-    margin-top: 0;
-    text-align: center;
+  @include tablets{
+    margin-top: rem(30px);
   }
 }
 .footer__social{
   display: flex;
   align-items: flex-end;
-  @include phones{
+  @include tablets{
     align-items: center;
-    margin-top: rem(50px);
+    justify-content: center;
+    margin-top: rem(60px);
   }
 }
 .footer__social-list{
   display: flex;
   align-items: flex-end;
+  @include tablets{
+    width: 50%;
+  }
 }
 .footer__social-item{
   &:first-child{
     margin-left: 0;
   }
   margin-left: rem(17px);
+  @include tablets{
+    width: 50%;
+  }
 }

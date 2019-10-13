@@ -3,7 +3,10 @@
   color:#fff;
   text-align: center;
   @include laptops{
-    margin-top: rem(100px);
+    margin-top: rem(116px);
+  }
+  @include tablets{
+    margin-top: rem(68px);
   }
   @include phones{
     margin-top: rem(111px);
@@ -13,18 +16,35 @@
   text-transform: uppercase;
   font-size: rem(60px);
   @include myriad(bold);
+  @include laptops{
+    font-size: rem(50px);
+  }
+  @include tablets{
+    font-size: rem(44px);
+    text-align: left;
+    width: rem(380px);
+  }
 }
 .info__subtitle{
   @include myriad(medium);
   font-size: rem(50px);
   margin-top: rem(46px);
   @include laptops{
-    margin-top: 0;
+    font-size: rem(40px);
+    margin-top: rem(16px);
+  }
+  @include tablets{
+    font-size: rem(20px);
+    text-align: left;
+    margin-top: rem(10px);
   }
 }
 .info__button{
   margin-top: rem(96px);
   @include laptops{
-    margin-top: rem(32px);
+    margin-top: rem(80px);
+  }
+  @include tablets{
+    margin-top: rem(48px);
   }
 }

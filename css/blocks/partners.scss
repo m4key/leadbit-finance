@@ -3,8 +3,13 @@
   background: url("../images/design_el-2.png") top center ;
   background-repeat: no-repeat;
   background-position-y: rem(80px);
+  @include laptops{
+    background-position-y: rem(48px);
+  }
   @include tablets{
+    background-position-y: 1rem;
     height: rem(486px);
+    background-size: contain;
   }
 }
 .partners__title{
@@ -13,11 +18,55 @@
   color: #045c8d;
   text-transform: uppercase;
   margin-top: rem(144px);
+  @include laptops{
+    font-size: rem(50px);
+  }
   @include tablets{    
-    margin-top: rem(119px);
+    margin-top: rem(97px);
+    font-size: rem(40px);
+    text-align: center;
   }
   @include phones-small{
     margin-top: rem(55px);
   }
 
+}
+.partners__content-list{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include laptops{
+    margin-left: rem(35px);
+  }
+  @include tablets{
+    display: none;
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+}
+.partners__content-item{
+  width: 33%;
+  @include tablets{
+    width: rem(289px);
+    height: rem(195px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+.partners__content-img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  @include laptops{
+    max-width: 80%;
+    max-height: 80%;
+  }
+  @include tablets{
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
