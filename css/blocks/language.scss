@@ -9,8 +9,12 @@
 
 }
 .language__pic{
-  width: 32px;
-  height: 21px;
+  width: rem(32px);
+  height: rem(21px);
+  @include phones-small{
+    width: rem(24px);
+    height: rem(16px);
+  }
 }
 .language__pic-img{
   width: 100%;

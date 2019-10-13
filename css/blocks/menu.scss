@@ -9,14 +9,16 @@
     position: absolute;
     margin: 0;
     top: 20%;
-    left: 1%;
+    left: 6%;
   }
   @include phones{
-    left: 0;
+    left: 8%;
   }
   @include phones-small{
-    left: -2%;
+    left: 10%;
+    top: 15%;
   }
+
 }
 .menu__list{
   display: flex;
@@ -38,5 +40,9 @@
   }
   @include phones{
     font-size: rem(18px);
+  }
+  @include phones-small{
+    font-size: rem(16px);
+    padding: 5px 5px;
   }
 }

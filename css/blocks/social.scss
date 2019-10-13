@@ -18,8 +18,8 @@
   display: flex;
   flex-shrink: 0;
   &--vk{
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     transform: translate(0, 4px);
   }
   &:first-child{
@@ -47,11 +47,11 @@
     height: rem(25px);
   }
   @include phones{
-    width: 30px;
-    height: 30px;
+    width: rem(30px);
+    height: rem(30px);
     &--vk{
       width: rem(36px);
-      height: 31px;
+      height: rem(31px);
       transform: translate(0, 4px);
     }
   }

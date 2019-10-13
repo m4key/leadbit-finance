@@ -11,6 +11,9 @@
   @include phones{
     margin-top: rem(60px);
   }
+  @include phones-small{
+    margin-top: rem(108px);
+  }
 }
 .info__title {
   text-transform: uppercase;
@@ -23,6 +26,10 @@
     font-size: rem(44px);
     text-align: left;
     width: rem(380px);
+  }
+  @include phones-small{
+    font-size: rem(32px);
+    width: rem(332px);
   }
 }
 .info__subtitle{
@@ -40,6 +47,9 @@
   }
   @include phones{
     margin-top: rem(20px);
+  }
+  @include phones-small{
+    font-size: rem(18px);
   }
 }
 .info__button{

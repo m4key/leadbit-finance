@@ -1,18 +1,29 @@
 .logo{
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+}
+.logo__img{
   width: rem(349px);
   height: rem(39px);
-  flex-shrink: 0;
+  background: url('/images/logo.png');
   @include laptops{
-    width: rem(284px);
-  }
-  @include phones{
+    background: url('/images/logo_mobile.png');
     width: rem(192px);
     height: rem(21px);
   }
+  @include tablets{
+    width: rem(204px);
+  }
+  @include phones{
+    width: rem(219px);
+  }
+  @include phones-small{
+    width: rem(256px);
+    height: rem(24px);
+  }
 }
-.logo__img{
+.logo__img-pic{
   width: 100%;
   height: 100%;
 }
